@@ -1,0 +1,12 @@
+Updating package in npm
+
+npm version patch
+git add *;
+git commit -m "Commit message"
+git push
+git push --tags
+npm publish
+
+Bower automatically detects new versions of your package based on Git tags. Super smart and makes publishing updated packages to Bower seamless.
+
+-------------------
