@@ -7,6 +7,11 @@ git push
 git push --tags
 npm publish
 
+-or just after a push-
+npm version patch
+git push --tags
+npm publish
+
 Bower automatically detects new versions of your package based on Git tags. Super smart and makes publishing updated packages to Bower seamless.
 
 -------------------
