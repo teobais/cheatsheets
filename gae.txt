@@ -1,0 +1,4 @@
+while building with maven, the following exception occured: You do not have permission to modify this app” from a Google App Engine deployment
+
+what helped wa sjust removing ~/.appcfg_oauth2_tokens_java file.
+---
