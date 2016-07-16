@@ -1,4 +1,5 @@
 show local branches: git branch
 delete a branch: git branch -D [branch_name]
+Cloning a repo from someone else's Github and pushing it to a repo on my Github: git remote set-url origin http://github.com/YOU/YOUR_REPO
 
 ---
