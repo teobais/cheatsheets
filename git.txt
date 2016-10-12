@@ -3,4 +3,5 @@ delete a branch: git branch -D [branch_name]
 Cloning a repo from someone else's Github and pushing it to a repo on my Github: git remote set-url origin http://github.com/YOU/YOUR_REPO
 Push a new local branch to a remote Git repository and track it too: git checkout -b <branch>   ,   git push -u origin <branch>
 Easily keep gh-pages in sync with master : http://lea.verou.me/2011/10/easily-keep-gh-pages-in-sync-with-master/
+Revert a locally modified file: git checkout -- [filename]
 ---
