@@ -5,6 +5,7 @@ Push a new local branch to a remote Git repository and track it too: git checkou
 Easily keep gh-pages in sync with master : http://lea.verou.me/2011/10/easily-keep-gh-pages-in-sync-with-master/
 Revert a locally modified file: git checkout -- [filename]
 Diff 2 branches : git diff --stat --color master..branchName
+commit only part of a file: git add --patch filename
 
 rename (locally & remotely) a branch: 
 1. switch to branch which needs to be renamed
