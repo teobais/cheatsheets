@@ -13,3 +13,5 @@ rename (locally & remotely) a branch:
 3. git push origin :<old_name>
 4. git push origin <new_name>:refs/heads/<new_name>
 ---
+
+Diff current branch with a stash: git stash show -p stash@{1}
