@@ -6,3 +6,7 @@ mysql> SELECT COALESCE(NULL, 2, 3);
 +----------------------+
 |                    2 |
 +----------------------+
+
+
+Add extra column in a select statement and give it a default value: select ..., ... , ..., 'John' as NAME
+The above statement will add a column in the result set with the name of NAME and the value of John for every result of the select statement.
