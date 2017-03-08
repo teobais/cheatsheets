@@ -1,3 +1,4 @@
 - A try-with-resources statement automatically closes the resource by calling its ```close``` method, **just** before the end of the ```try``` block.
 - If both the code in the ```try``` block and ```close()``` throw an exception, the exception thrown by ```close()``` is **suppressed** by the exception thrown in the ```try``` block. 
 - In a try-with-resources statement, when the code enclosed within the ```try``` body (```try``` minus its initialization code) throws an exception, followed by an exception thrown by the try-with-resources statement (which implicitly calls ```close()```), then the latter exception is suppressed. ```getSuppressed()``` never returns ```null```. If there aren't any suppressed exceptions, the length of the returned array is 0.
+- To use instances of your own class with a try-with-resources statement, you can implement the ```java.lang.AutoCloseable``` interface.
