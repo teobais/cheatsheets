@@ -1,1 +1,2 @@
 - A try-with-resources statement automatically closes the resource by calling its ```close``` method, **just** before the end of the ```try``` block.
+- If both the code in the ```try``` block and ```close()``` throw an exception, the exception thrown by ```close()``` is **suppressed** by the exception thrown in the ```try``` block. 
