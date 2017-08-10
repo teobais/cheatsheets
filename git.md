@@ -16,3 +16,6 @@ rename (locally & remotely) a branch:
 
 Diff current branch with a stash: git stash show -p stash@{1}
 Undo a local commit: git reset HEAD~1
+
+Diff specific file among two different branches
+```git diff feature-branch master -- pom.xml```
