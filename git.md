@@ -19,3 +19,6 @@ Undo a local commit: git reset HEAD~1
 
 Diff specific file among two different branches
 ```git diff feature-branch master -- pom.xml```
+
+Checkout tag and branch it
+```git checkout tags/<tag_name> -b <branch_name>```
