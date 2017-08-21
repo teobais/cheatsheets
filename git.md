@@ -22,3 +22,6 @@ Diff specific file among two different branches
 
 Checkout tag and branch it
 ```git checkout tags/<tag_name> -b <branch_name>```
+
+Create branch from specific hash
+```git branch branchname <sha1-of-commit>```
