@@ -25,3 +25,6 @@ Checkout tag and branch it
 
 Create branch from specific hash
 ```git branch branchname <sha1-of-commit>```
+
+Execute `git status` on directory `B`
+```git -C B log```
