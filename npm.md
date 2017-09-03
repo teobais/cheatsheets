@@ -14,4 +14,10 @@ npm publish
 
 Bower automatically detects new versions of your package based on Git tags. Super smart and makes publishing updated packages to Bower seamless.
 
+Update package.json dependencies to their latest versions
+```js
+npm i -g npm-check-updates
+npm-check-updates -u
+npm install
+```
 -------------------
