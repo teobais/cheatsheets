@@ -32,4 +32,15 @@ Execute `git status` on directory `B`
 Overwrite single file in feature branch with the same file in the master branch
 `git checkout FROM_BRANCH_NAME path/to/file`
 
+### Rename a local and remote branch in git
+- When on the branch you want to rename `git branch -m new-name`
+- If on a different branch `git branch -m old-name new-name`
+- Delete the old-name remote branch and push the new-name local branch `git push origin :old-name new-name`
+- Reset the upstream branch for the new-name local branch `git push origin -u new-name`
+
+### Create an annotated tag
+```
+git tag -a v1.4 -m 'my version 1.4'
+git push origin --tags
+```
 
