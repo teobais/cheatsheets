@@ -69,3 +69,12 @@ fatal: cherry-pick failed
 ```
 As [`-m`](https://stackoverflow.com/questions/24301390/git-revert-hash-not-allowed-due-to-a-merge-but-no-m-option-was-given) you have to specify the parent on which the cherry-pick will be based.
 
+```
+git cherry-pick 47c2931e0919ecafeaaf1b33839dede64dd33ba4 -m 1
+```
+
+Indexing for the `-m` option applies to the order in which the commits appear visually. So, in the following line, `-m 1` corresponds to `e391102`
+
+```
+2 parents e391102 + 3d399d9 commit 47c2931e0919ecafeaaf1b33839dede64dd33ba4
+```
