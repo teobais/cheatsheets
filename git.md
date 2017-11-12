@@ -51,3 +51,21 @@ git checkout master
 git merge upstream/master
 ```
 
+### Rebase specific commit from a different upstream
+```
+git rebase --onto master [commit SHA-1] upstream/master
+```
+If it is about a merge commit , you will probably get into a Detached HEAD state, which means that you'd better force push.
+
+#### Forcing a push from a Detached HEAD
+If you force a push from a Detached HEAD to a specific branch, apparently you first have to checkout that specific branch and pull, in order for the changes to also be applied locally.
+
+### Cherry-picking a merge commit
+A merge commit is a result of 2 separate commits, so, cherry-pick command needs a bit of guidance here:
+```
+git cherry-pick 47c2931e0919ecafeaaf1b33839dede64dd33ba4
+error: commit 47c2931e0919ecafeaaf1b33839dede64dd33ba4 is a merge but no -m option was given.
+fatal: cherry-pick failed
+```
+As [`-m`](https://stackoverflow.com/questions/24301390/git-revert-hash-not-allowed-due-to-a-merge-but-no-m-option-was-given) you have to specify the parent on which the cherry-pick will be based.
+
