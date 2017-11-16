@@ -32,6 +32,9 @@ Execute `git status` on directory `B`
 Overwrite single file in feature branch with the same file in the master branch
 `git checkout FROM_BRANCH_NAME path/to/file`
 
+### Branching
+- from a specific commit: `git checkout -b [branch-name] [commit-SHA1]`
+
 ### Rename a local and remote branch in git
 - When on the branch you want to rename `git branch -m new-name`
 - If on a different branch `git branch -m old-name new-name`
