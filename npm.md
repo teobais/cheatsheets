@@ -21,3 +21,7 @@ npm-check-updates -u
 npm install
 ```
 -------------------
+
+### Error: Cannot find module './command'
+- Delete the `node_modules` directory
+- run `npm install`
