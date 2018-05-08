@@ -81,3 +81,7 @@ Indexing for the `-m` option applies to the order in which the commits appear vi
 ```
 2 parents e391102 + 3d399d9 commit 47c2931e0919ecafeaaf1b33839dede64dd33ba4
 ```
+
+### Force pull to overwrite local files
+- First ensure you are up-to-date (`git remote update --prune`, `git fetch --all`)
+- Then force the pull to overwrite local files: `git reset --hard origin/<branch_name>`
