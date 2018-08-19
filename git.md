@@ -54,6 +54,20 @@ git checkout master
 git merge upstream/master
 ```
 
+An error message like the one below means that you have not added the `upstream` repository locally.
+<pre>
+fatal: 'upstream' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+</pre>
+
+In order to do so, execute the following command:
+```
+git remote add upstream [git_url_of_the_parent_of_the_fork]
+```
+
 ### Rebase specific commit from a different upstream
 ```
 git rebase --onto master [commit SHA-1] upstream/master
