@@ -41,6 +41,11 @@ Overwrite single file in feature branch with the same file in the master branch
 - Delete the old-name remote branch and push the new-name local branch `git push origin :old-name new-name`
 - Reset the upstream branch for the new-name local branch `git push origin -u new-name`
 
+### Remove untracked files
+```
+git clean -fX
+```
+
 ### Create an annotated tag
 ```
 git tag -a v1.4 -m 'my version 1.4'
