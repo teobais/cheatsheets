@@ -52,6 +52,11 @@ git tag -a v1.4 -m 'my version 1.4'
 git push origin --tags
 ```
 
+### Specify a new remote upstream
+```
+git remote add upstream [github url]
+```
+
 ### Sync a fork
 ```
 git fetch upstream
