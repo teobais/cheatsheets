@@ -41,6 +41,10 @@ Overwrite single file in feature branch with the same file in the master branch
 - Delete the old-name remote branch and push the new-name local branch `git push origin :old-name new-name`
 - Reset the upstream branch for the new-name local branch `git push origin -u new-name`
 
+### PRs
+- checkout PR locally: `git fetch origin pull/id/head:pr-branch-name`
+- when additional commits are pushed to an already opened PR, we can fetch them using the following flag `--update-head-ok` . Full command: `git fetch origin pull/id/head:pr-branch-name --update-head-ok`
+  
 ### Remove untracked files
 ```
 git clean -fX
